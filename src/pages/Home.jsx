@@ -1,6 +1,7 @@
 import './Home.css'
 import { CiMail } from 'react-icons/ci'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import profile from  "../assets/sam.png"
 
 export default function App() {
     const skills = {
@@ -46,11 +47,18 @@ export default function App() {
 
       <div className="hero">
         <div className="hero-tag">available for work</div>
-        <h1>
-          <span className="highlight">Samuel Passey</span><br />
-          <span className="dim sub">— developer & builder</span>
-        </h1>
-        <p className="hero-sub">I am a full stack developer based in Cambridge and a Computer Science undergraduate in my final year at the University of Kent. I am seeking a software development role where I can apply my technical skills and practical experience. </p>
+        <div className="hero-title-row">
+          <div>
+            <h1>
+              <span className="highlight">Samuel Passey</span><br />
+              <span className="dim sub">— developer & builder</span>
+            </h1>
+          </div>
+          <div className="hero-image">
+            <img src={profile} alt="Samuel Passey" />
+          </div>
+        </div>
+        <p className="hero-sub">I am a full stack developer based in Cambridge and a Computer Science undergraduate in my final year at the University of Kent. I am seeking a software development role where I can apply my technical skills and practical experience.</p>
         <p className="hero-sub">I aim to build reliable systems that are well written, well designed, and easy to maintain.</p>
       </div>
 
