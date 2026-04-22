@@ -132,3 +132,151 @@ h1 .sub {
   flex-wrap: wrap;
 }
 
+
+/* ─── Sections (shared) ─────────────────────────────────────── */
+
+section {
+  padding: 1.5rem 2.5rem;
+  /* border-bottom: 1px solid var(--border); */
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+
+/* ─── About ─────────────────────────────────────────────────── */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.skills-box {
+  background: var(--surface);
+  border: 1px solid var(--border);  
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.skills-title {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.skill-group {
+  margin-bottom: 0.8rem;
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.2rem;
+}
+
+.tag {
+  padding: 4px 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.edu-institution {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-family: var(--mono);
+  margin-bottom: 0.35rem;
+}
+
+.edu-detail {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ─── Experience ────────────────────────────────────────────── */
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-card:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.experience-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  padding-top: 3px;
+}
+
+.experience-role {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-family: var(--mono);
+  margin-bottom: 0.2rem;
+}
+
+.experience-company {
+  font-size: 0.8rem;
+  color: var(--accent2);
+  margin-bottom: 0.6rem;
+}
+
+.experience-desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+
