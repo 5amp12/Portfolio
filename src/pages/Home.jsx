@@ -77,13 +77,13 @@ export default function App() {
                     <span className="skill-category">2022 — 2026</span>
                     <p className="edu-institution">University of Kent</p>
                     <p className="edu-detail">BSc (Hons) Computer Science</p>
-                    <p className="edu-detail">Avg: 82%</p>
+                    <p className="edu-detail">Avg: 81%</p>
                 </div>
                 <div className="skill-group">
                     <span className="skill-category">2020 — 2022</span>
                     <p className="edu-institution">Long Road Sixth Form College</p>
                     <p className="edu-detail">Computer Science · Business · Chemistry</p>
-                    <p className="edu-detail">D · B · C</p>
+                    <p className="edu-detail">Distinction · B · C</p>
                 </div>
             </div>
         </div>
