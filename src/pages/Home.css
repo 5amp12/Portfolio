@@ -279,4 +279,74 @@ section {
   line-height: 1.7;
 }
 
+/* ─── Projects ──────────────────────────────────────────────── */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+a.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  border-color: var(--accent2);
+}
+
+.project-num {
+  margin-bottom: 0.75rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.project-card p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.arrow {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent2);
+}
+
+
+/* ─── Footer ────────────────────────────────────────────────── */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+}
+
+footer p {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
 

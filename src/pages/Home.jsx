@@ -11,6 +11,27 @@ export default function App() {
         Working_Knowledge: ['C++', 'AWS' ]
     }
 
+    const experience = [
+        {
+            date: 'Aug 2024 — Aug 2025',
+            role: 'Computer Technician',
+            company: 'University of Cambridge',
+            desc: 'Developed Python and PostgreSQL scripts to automate internal processes and improve efficiency. Supported Windows and Ubuntu OS upgrade projects using Bash, SQL, and Python. Contributed to shared codebases and documentation using Git/GitLab and code review practices.',
+        },
+        {
+            date: 'Jul 2023 - May 2024 | Sept 2025 - Current',
+            role: 'Peer Tutor',
+            company: 'University of Kent',
+            desc: 'Worked with lecturers to assess first-year Computer Science coursework in a paid academic support role.',
+        },
+    ]
+
+    const projects = [
+        { num: '01', title: 'QuickFilm', desc: 'A full-stack film rating web app built as a learning project.', link: 'https://github.com/5amp12/Quickfilm' },
+        { num: '02', title: 'EmailTrackr', desc: 'A full-stack email scam check site which allows users to check if any of there emails are scams {In-progress}', link: 'https://github.com/5amp12/emailTracker' },
+
+    ] 
+
 
   return (
     <>
@@ -67,6 +88,41 @@ export default function App() {
             </div>
         </div>
       </section>
+
+      <section id="experience">
+        <div className="section-label">experience</div>
+        <div className="experience-list">
+            {experience.map(e => (
+            <div key={e.date} className="experience-card">
+                <span className="experience-date">{e.date}</span>
+                <div className="experience-body">
+                <p className="experience-role">{e.role}</p>
+                <p className="experience-company">{e.company}</p>
+                <p className="experience-desc">{e.desc}</p>
+                </div>
+            </div>
+            ))}
+        </div>
+      </section>
+
+      <section id="projects">
+        <div className="section-label">projects</div>
+        <a className="projects-grid">
+          {projects.map(p => (
+            <a href={p.link} key={p.num} className="project-card">
+              <div className="project-num">{p.num}</div>
+              <h3>{p.title}</h3>
+              <p>{p.desc}</p>
+              <span className="arrow">→ view project</span>
+            </a>    
+          ))}
+        </a>
+      </section>
+
+      <footer>
+        <p>© 2026 Samuel Passey</p>
+        <p>built with react + vite</p>
+      </footer>
     </>
   )
 }
