@@ -115,16 +115,24 @@ export default function App() {
 
       <section id="projects">
         <div className="section-label">projects</div>
-        <a className="projects-grid">
+        <div className="projects-grid">
           {projects.map(p => (
-            <a href={p.link} key={p.num} className="project-card">
+            !p.link ? (
+              <a key={p.num} className="project-card" target="_blank" rel="noreferrer">
+                <div className="project-num">{p.num}</div>
+                <h3>{p.title}</h3>
+                <p>{p.desc}</p>
+              </a>
+            ) : (
+              <a href={p.link} key={p.num} className="project-card" target="_blank" rel="noreferrer">
               <div className="project-num">{p.num}</div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
               <span className="arrow">→ view project</span>
             </a>    
+            )
           ))}
-        </a>
+        </div>
       </section>
 
       <footer>

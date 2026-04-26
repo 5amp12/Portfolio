@@ -316,9 +316,27 @@ section {
 /* ─── Projects ──────────────────────────────────────────────── */
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
   gap: 1rem;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  width: 100%;
+}
+
+.projects-grid::-webkit-scrollbar {
+  height: 4px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
 }
 
 .project-card {
@@ -334,6 +352,8 @@ a.project-card {
   display: block;
   text-decoration: none;
   color: inherit;
+  flex: 0 0 280px;
+  min-width: 580px;
 }
 
 .project-card:hover {
