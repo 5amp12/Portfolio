@@ -30,7 +30,8 @@ export default function App() {
     const projects = [
         { num: '01', title: 'QuickFilm', desc: 'A full-stack film rating web app built as a learning project.', link: 'https://github.com/5amp12/Quickfilm' },
         { num: '02', title: 'EmailTrackr', desc: 'A full-stack email scam check site which allows users to check if any of there emails are scams {In-progress}', link: 'https://github.com/5amp12/emailTracker' },
-
+        { num: '03', title: 'Kent Events', desc: 'A event website for the University of Kent that scrapes from all the events pages and puts it on one site', link: 'https://github.com/ryangoslingreal/kent-events' },
+        { num: '04', title: 'Raspberry Pi Temperature Display', desc: 'Used a Raspberry Pi, Python, and an LED screen to display real-time room temperature and weather data.'},
     ] 
 
 
