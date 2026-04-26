@@ -403,4 +403,83 @@ footer p {
   color: var(--muted);
 }
 
+/* ─── Mobile ────────────────────────────────────────────────── */
 
+@media (max-width: 768px) {
+
+  /* Nav */
+  nav {
+    padding: 1rem 1.25rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 2.5rem 1.25rem 1.5rem;
+    max-width: 100%;
+  }
+
+  .hero-title-row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .hero-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  /* Sections */
+  section {
+    padding: 1.25rem 1.25rem;
+  }
+
+  /* Skills & Education */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Experience */
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding: 1.25rem 0;
+  }
+
+  .experience-date {
+    padding-top: 0;
+  }
+
+  .experience-desc {
+    width: 100%;
+  }
+
+  /* Projects */
+  .projects-grid {
+    flex-direction: column;
+    overflow-x: unset;
+  }
+
+  a.project-card {
+    flex: 1 1 auto;
+    min-width: unset;
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1.25rem;
+  }
+}
