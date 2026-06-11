@@ -9,9 +9,9 @@ export default function Work() {
   const projects = [
     {
       title: 'QuickFilm',
-      meta: 'Full-stack · React',
+      meta: 'Full-stack · React  · Node.js · PostGreSQL',
       desc: 'A film rating web app built end-to-end as a learning project.',
-      link: 'https://github.com/5amp12/Quickfilm',
+      link: 'https://github.com/5amp12/Quickfilm',  
     },
     {
       title: 'EmailTrackr',
@@ -21,13 +21,13 @@ export default function Work() {
     },
     {
       title: 'Kent Events',
-      meta: 'Web scraping · Aggregation',
-      desc: 'One site for every University of Kent event, scraped from across the university\u2019s event pages.',
+      meta: 'Full-stack · React · Node.js · Pupeteer · MySQL',
+      desc: 'One site for every University of Kent event, scraped from across the universitys event pages.',
       link: 'https://github.com/ryangoslingreal/kent-events',
     },
     {
       title: 'Fall Monitor',
-      meta: 'Hardware · Python',
+      meta: 'Hardware · C++ · SUPABASE · Telegram API · Arduino Cloud',
       desc: 'A ESP32, accelormeter and buzzer which work together to track and alert the user and there loved ones of potential falls.',
     },
     {

@@ -23,7 +23,7 @@ export default function Info() {
     languages: ['Python', 'Java', 'JavaScript'],
     frontend: ['React', 'HTML', 'CSS', 'Tailwind'],
     backend: ['Node.js', 'FastAPI', 'PostgreSQL', 'MySQL'],
-    infrastructure: ['Docker', 'Git', 'GitHub', 'GitLab', 'Linux'],
+    infrastructure: ['Docker', 'Git', 'GitHub', 'GitLab', 'Linux', "SUPABASE"],
     'working knowledge': ['C++', 'AWS'],
     }
   return (
