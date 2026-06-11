@@ -29,15 +29,16 @@ export default function Info() {
   return (
     <main>
       <header className="page-hero">
-        <h1>Info</h1>
+        
         <div className="hero-foot">
+            <h1>Info</h1>
             <p className="hero-sub">
             Full-stack developer based in Cambridge, finishing a Computer
             Science degree at the University of Kent. I aim to build reliable
             systems that are well written, well designed, and easy to maintain.
             </p>
-            <img className="hero-photo" src={profile} alt="Samuel Passey" />
         </div>
+        <img className="hero-photo" src={profile} alt="Samuel Passey" />
       </header>
 
       <section id="experience">
