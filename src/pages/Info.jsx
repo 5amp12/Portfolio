@@ -1,5 +1,5 @@
 import "./App.css";
-import profile from '../assets/sam.png'
+import profile from '../assets/grad.png'
 
 export default function Info() {
 
